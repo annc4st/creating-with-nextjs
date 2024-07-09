@@ -1,10 +1,31 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
+    <>
+    <Head>
+    <title>List | Home</title>
+    <meta name='keywords' content='ninjas' />
+    </Head>
     <div className={styles.container}>
-      <Head>
+ 
+     <h1 className={styles.title}>Homepage</h1>
+     <p className={styles.text}>A Homepgae that contains same tesxt as about page is a section on a website that provides information about a company, organization, or individual. It's an opportunity to tell your brand's story, share your vision, introduce team members, and outline your history, values, and achievements. This is where you build trust and credibility with customers</p>
+
+
+
+     <Link href="/ninjas"><div className={styles.btn}>See the List</div></Link>
+  
+    </div>
+    </>
+  )
+}
+
+
+
+      {/* <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -59,7 +80,4 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
-    </div>
-  )
-}
+      </footer> */}
